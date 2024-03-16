@@ -1,5 +1,4 @@
 FROM openjdk:11
-WORKDIR /app
-COPY ./target/Pilgriamge-0.0.1-SNAPSHOT.jar /app
 EXPOSE 8080
-CMD ["java", "-jar", "Pilgriamge-0.0.1-SNAPSHOT.jar"]
+ADD target/spring-boot-docker.jar spring-boot-docker.jar
+CMD ["java", "-jar", "/spring-boot-docker.jar"]
