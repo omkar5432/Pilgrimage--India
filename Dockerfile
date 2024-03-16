@@ -1,5 +1,5 @@
 FROM openjdk:11
 LABEL maintainer="javaguides.net"
-ADD target/Pilgriamge-0.0.1-SNAPSHOT.jar Pilgriamge-0.0.1-SNAPSHOT.jar
-ENTRYPOINT [ "java","-jar","Pilgriamge-0.0.1-SNAPSHOT.jar" ]
+COPY target/*.jar springboot-docker-demo.jar
+ENTRYPOINT [ "java","-jar","springboot-docker-demo.jar" ]
 EXPOSE 8080
