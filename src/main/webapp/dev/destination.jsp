@@ -202,19 +202,56 @@
     
     
    <center> 
-   <h1>Hello</h1>
-   <c:forEach var="a" items="${lr}">
-  <h3 style="color: blue">${a.name}</h3>
-   </c:forEach>
-
+   <h4>Hello <% out.println(user1); %></h4> 
+   
+	<br>
    <a href="book" class="btn btn-primary btn-block" style="height: 47px; width: 4cm; display: block;">Book Now</a>
     </center>
    
     <!-- Booking End -->
-   
-    
-    
-    
+   <table
+								class="table table-hover table-striped tm-table-striped-even mt-3">
+								<thead>
+									<tr class="tm-bg-gray">
+										<th scope="col">&nbsp;</th>
+										<th scope="col">ID</th>
+										<th scope="col" class="text-center">Days</th>
+										<th scope="col" class="text-center">Place</th>
+										<th scope="col" class="text-center">Location</th>
+										<th scope="col" class="text-center">Image</th>
+										<th scope="col" class="text-center">Price</th>
+										<th scope="col" class="text-center">About Package</th>
+
+									</tr>
+								</thead>
+								<tbody>
+									<c:forEach var="d" items="${kk}">
+										<tr>
+											<td scope="col">&nbsp;</td>
+											<td class="tm-product-name">${d.id}</td>
+											<td class="text-center">${d.days}</td>
+											<td class="text-center">${d.place}</td>
+											<td class="text-center">${d.location}</td>
+										<!-- 	<td class="text-center">${d.imagepath}</td> -->
+											<td><img src="${d.imagepath}"></td>
+											<td class="text-center">${d.price}</td>
+											<td class="text-center">${d.about_package}</td>
+											<td class="button"><button>Book</button></td>
+											
+										<!--  	<td><a href="deletepackage?id=${d.id}" style="color: black"
+												onclick="alert('Do you really want to Delete Pacakge')">
+												<span class="glyphicon" style="color: black">&#xe020;</span>&nbsp &nbsp Delete</a>
+												&nbsp &nbsp ||&nbsp &nbsp 
+												 <a
+												href="updateuser?id=${d.id}" style="color: black">
+												<span class="glyphicon" style="color: black">&#xe065;</span>
+												&nbsp	Update</a>
+													</td>-->
+										</tr>
+									</c:forEach>
+								</tbody>
+							</table>
+							
 
    <!-- Destination Start -->
     <div class="container-fluid py-5">
@@ -281,7 +318,7 @@
             </div>
         </div>
     </div>
-    <!-- Destination Start -->
+    <!-- Destination End-->
 
 
     <!-- Footer Start -->

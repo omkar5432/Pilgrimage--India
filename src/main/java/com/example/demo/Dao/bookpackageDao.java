@@ -30,7 +30,7 @@ public class bookpackageDao implements bookpackageService {
 	@Override
 	public List<bookpackagedetail> GetPackEmail(String email) {
 		// TODO Auto-generated method stub
-		return null;
+		return bpr.findAll();
 	}
 
 }
