@@ -36,9 +36,9 @@
             <div class="row">
                 <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
                     <div class="d-inline-flex align-items-center">
-                        <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                        <p><i class="fa fa-envelope mr-2"></i>pilgrimage@gmail.com.com</p>
                         <p class="text-body px-3">|</p>
-                        <p><i class="fa fa-phone-alt mr-2"></i>+012 345 6789</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>9765817492</p>
                     </div>
                 </div>
                 <div class="col-lg-6 text-center text-lg-right">
@@ -171,20 +171,22 @@
 
 
     <!-- Packages Start -->
+ 
     <div class="container-fluid py-5">
         <div class="container pt-5 pb-3">
             <div class="text-center mb-3 pb-3">
                 <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Packages</h6>
-                <h1>Pefect Tour Packages</h1>
+                <h1>Perfect Tour Packages</h1>
             </div>
+            
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="package-item bg-white mb-2">
                         <img class="img-fluid" src="img/package-1.jpg" alt="">
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>${d.location}</small>
+                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>${d.days}</small>
                                 <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
                             </div>
                             <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
@@ -295,7 +297,9 @@
             </div>
         </div>
     </div>
+    
     <!-- Packages End -->
+
 
 
     <!-- Destination Start -->

@@ -16,5 +16,7 @@ public interface addpackService {
 	long totalpackage();
 	
 	List<addpack> getAllInfo();
+	
+	List<addpack> getAllInfo2();
 
 }

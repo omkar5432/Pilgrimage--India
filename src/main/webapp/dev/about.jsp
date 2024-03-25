@@ -317,7 +317,7 @@
                             </div>
                         </div>
                         <div class="text-center py-4">
-                            <h5 class="text-truncate">Guide Name</h5>
+                            <h5 class="text-truncate">Amol Pawar</h5>
                             <p class="m-0">Designation</p>
                         </div>
                     </div>
@@ -334,7 +334,7 @@
                             </div>
                         </div>
                         <div class="text-center py-4">
-                            <h5 class="text-truncate">Guide Name</h5>
+                            <h5 class="text-truncate">Omkar Thube</h5>
                             <p class="m-0">Designation</p>
                         </div>
                     </div>
@@ -351,7 +351,7 @@
                             </div>
                         </div>
                         <div class="text-center py-4">
-                            <h5 class="text-truncate">Guide Name</h5>
+                            <h5 class="text-truncate">Gaurav Bodare</h5>
                             <p class="m-0">Designation</p>
                         </div>
                     </div>

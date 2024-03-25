@@ -209,49 +209,61 @@
     </center>
    
     <!-- Booking End -->
-   <table
-								class="table table-hover table-striped tm-table-striped-even mt-3">
-								<thead>
-									<tr class="tm-bg-gray">
-										<th scope="col">&nbsp;</th>
-										<th scope="col">ID</th>
-										<th scope="col" class="text-center">Days</th>
-										<th scope="col" class="text-center">Place</th>
-										<th scope="col" class="text-center">Location</th>
-										<th scope="col" class="text-center">Image</th>
-										<th scope="col" class="text-center">Price</th>
-										<th scope="col" class="text-center">About Package</th>
-
-									</tr>
-								</thead>
-								<tbody>
-									<c:forEach var="d" items="${kk}">
-										<tr>
-											<td scope="col">&nbsp;</td>
-											<td class="tm-product-name">${d.id}</td>
-											<td class="text-center">${d.days}</td>
-											<td class="text-center">${d.place}</td>
-											<td class="text-center">${d.location}</td>
-										<!-- 	<td class="text-center">${d.imagepath}</td> -->
-											<td><img src="${d.imagepath}"></td>
-											<td class="text-center">${d.price}</td>
-											<td class="text-center">${d.about_package}</td>
-											<td class="button"><button>Book</button></td>
-											
-										<!--  	<td><a href="deletepackage?id=${d.id}" style="color: black"
-												onclick="alert('Do you really want to Delete Pacakge')">
-												<span class="glyphicon" style="color: black">&#xe020;</span>&nbsp &nbsp Delete</a>
-												&nbsp &nbsp ||&nbsp &nbsp 
-												 <a
-												href="updateuser?id=${d.id}" style="color: black">
-												<span class="glyphicon" style="color: black">&#xe065;</span>
-												&nbsp	Update</a>
-													</td>-->
-										</tr>
-									</c:forEach>
-								</tbody>
-							</table>
+   
 							
+							
+	<c:forEach var="d" items="${kk}">
+	<div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Packages</h6>
+                <h1>Perfect Tour Packages</h1>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="${d.imagepath}" alt="">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>${d.place}</small>
+                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>${d.days}</small>
+                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
+                            </div>
+                            <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <h5 class="m-0">${d.price}</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="img/package-6.jpg" alt="">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
+                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
+                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
+                            </div>
+                            <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <h5 class="m-0">$350</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	</c:forEach>						
 
    <!-- Destination Start -->
     <div class="container-fluid py-5">

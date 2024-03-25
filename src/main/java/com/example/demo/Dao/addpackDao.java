@@ -44,6 +44,12 @@ public class addpackDao implements addpackService {
 		return ar.findAll();
 	}
 
+	@Override
+	public List<addpack> getAllInfo2() {
+		// TODO Auto-generated method stub
+		return ar.findAll();
+	}
+
 	
 
 }
