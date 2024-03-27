@@ -212,7 +212,7 @@
    
 							
 							
-	<c:forEach var="d" items="${kk}">
+ 	<c:forEach var="d" items="${kk}">
 	<div class="container-fluid py-5">
         <div class="container pt-5 pb-3">
             <div class="text-center mb-3 pb-3">
@@ -241,7 +241,7 @@
                     </div>
                 </div>
                 
-                <div class="col-lg-4 col-md-6 mb-4">
+                <!-- <div class="col-lg-4 col-md-6 mb-4">
                     <div class="package-item bg-white mb-2">
                         <img class="img-fluid" src="img/package-6.jpg" alt="">
                         <div class="p-4">
@@ -258,13 +258,12 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </div> 
+                </div>-->
             </div>
         </div>
     </div>
 	</c:forEach>						
-
    <!-- Destination Start -->
     <div class="container-fluid py-5">
         <div class="container pt-5 pb-3">
