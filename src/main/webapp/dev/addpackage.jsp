@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Show Passanger</title>
+    <title>Add Package</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -60,10 +60,9 @@
     </style>
 </head>
 <body>
-	<form action="savepackage" method="post">
     <div class="container">
         <h2>Add Tour Details</h2>
-        <form action="addTour" method="post" enctype="multipart/form-data">
+        <form action="savepackage" method="post" enctype="multipart/form-data">
             <label for="tourName">Days:</label><br>
             <input type="text" id="tourName" name="days"><br>
             
@@ -77,14 +76,13 @@
             <input type="number" id="price" name="price" min="0" step="any"><br>
             
             <label for="">Image:</label><br>
-            <input type="file" id="destination" name="imagepath"><br>
+            <input type="file" id="destination" name="file" accept="image/*"><br>
             
             <label for="photo">About Package:</label><br>
-            <input type="text" id="photo" name="about_package"><br><br>
+            <input type="text" id="photo" name="about_package" ><br><br>
             
             <input type="submit" value="Submit">
         </form>
     </div>
-    </form>
 </body>
 </html>

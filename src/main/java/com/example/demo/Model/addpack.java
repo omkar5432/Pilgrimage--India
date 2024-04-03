@@ -14,7 +14,7 @@ public class addpack {
 	private String place;
 	private String location;
 	private String about_package;
-	private String imagepath;
+	private String filename;
 	private double price;
 	public int getId() {
 		return id;
@@ -46,11 +46,11 @@ public class addpack {
 	public void setAbout_package(String about_package) {
 		this.about_package = about_package;
 	}
-	public String getImagepath() {
-		return imagepath;
+	public String getFilename() {
+		return filename;
 	}
-	public void setImagepath(String imagepath) {
-		this.imagepath = imagepath;
+	public void setFilename(String filename) {
+		this.filename = filename;
 	}
 	public double getPrice() {
 		return price;
@@ -61,8 +61,9 @@ public class addpack {
 	@Override
 	public String toString() {
 		return "addpack [id=" + id + ", days=" + days + ", place=" + place + ", location=" + location
-				+ ", about_package=" + about_package + ", imagepath=" + imagepath + ", price=" + price + "]";
+				+ ", about_package=" + about_package + ", filename=" + filename + ", price=" + price + "]";
 	}
+	
 	
 	
 	

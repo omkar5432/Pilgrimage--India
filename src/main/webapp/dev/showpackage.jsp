@@ -156,7 +156,9 @@ thead tr th {
 											<td class="text-center">${d.days}</td>
 											<td class="text-center">${d.place}</td>
 											<td class="text-center">${d.location}</td>
-											<td class="text-center">${d.imagepath}</td>
+											<td> 
+											<img src="/Pilgriamge/src/main/resources/static/img"+${d.filename}></img>								
+											</td>
 											<td class="text-center">${d.price}</td>
 											<td class="text-center">${d.about_package}</td>
 											<td><a href="deletepackage?id=${d.id}" style="color: black"
