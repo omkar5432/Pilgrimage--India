@@ -18,5 +18,9 @@ public interface addpackService {
 	List<addpack> getAllInfo();
 	
 	List<addpack> getAllInfo2();
+	
+	addpack updaatedata(int id);
+	
+	void updatepackage(addpack a2);
 
 }

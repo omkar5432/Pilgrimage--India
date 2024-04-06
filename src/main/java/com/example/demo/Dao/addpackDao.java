@@ -50,6 +50,19 @@ public class addpackDao implements addpackService {
 		return ar.findAll();
 	}
 
+	@Override
+	public addpack updaatedata(int id) {
+		addpack a=ar.getById(id);
+	//	ar.save(a);
+		return a;
+	}
+
+	@Override
+	public void updatepackage(addpack a2) {
+		ar.save(a2);
+		
+	}
+
 	
 
 }

@@ -223,7 +223,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="package-item bg-white mb-2">
-                        <img class="img-fluid" src="/Pilgriamge/src/main/resources/static/img"+${d.filename} alt="image">
+                        <img class="img-fluid" src="img/${d.filename}" alt="${d.filename}">
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
                                 <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>${d.place}</small>
@@ -234,7 +234,7 @@
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">${d.price}</h5>
+                                    <h5 class="m-0">RS ${d.price}</h5>
                                 </div>
                             </div>
                         </div>

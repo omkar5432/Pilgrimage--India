@@ -58,6 +58,7 @@ public class registerDao implements registerService {
 	@Override
 	public register getsingleuse(int id) {
 		register r = rr.getById(id);
+		rr.save(r);
 		return r;
 	}
 	

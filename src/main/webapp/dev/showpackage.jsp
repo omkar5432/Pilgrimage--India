@@ -138,11 +138,11 @@ thead tr th {
 								<thead>
 									<tr class="tm-bg-gray">
 										<th scope="col">&nbsp;</th>
+										<th scope="col" class="text-center">Image</th>
 										<th scope="col">ID</th>
 										<th scope="col" class="text-center">Days</th>
 										<th scope="col" class="text-center">Place</th>
 										<th scope="col" class="text-center">Location</th>
-										<th scope="col" class="text-center">Image</th>
 										<th scope="col" class="text-center">Price</th>
 										<th scope="col" class="text-center">About Package</th>
 
@@ -152,13 +152,14 @@ thead tr th {
 									<c:forEach var="d" items="${l1}">
 										<tr>
 											<td scope="col">&nbsp;</td>
+											<td> 
+											<img src="img/${d.filename}" alt="${d.filename}" style="border: 1px solid #ddd;border-radius: 4px;padding: 5px;width: 150px;"></img>								
+											</td>
 											<td class="tm-product-name">${d.id}</td>
 											<td class="text-center">${d.days}</td>
 											<td class="text-center">${d.place}</td>
 											<td class="text-center">${d.location}</td>
-											<td> 
-											<img src="/Pilgriamge/src/main/resources/static/img"+${d.filename}></img>								
-											</td>
+											
 											<td class="text-center">${d.price}</td>
 											<td class="text-center">${d.about_package}</td>
 											<td><a href="deletepackage?id=${d.id}" style="color: black"
@@ -166,7 +167,7 @@ thead tr th {
 												<span class="glyphicon" style="color: black">&#xe020;</span>&nbsp &nbsp Delete</a>
 												&nbsp &nbsp ||&nbsp &nbsp 
 												 <a
-												href="updateuser?id=${d.id}" style="color: black">
+												href="updatepackage?id=${d.id}" style="color: black">
 												<span class="glyphicon" style="color: black">&#xe065;</span>
 												&nbsp	Update</a>
 													</td>
