@@ -12,4 +12,4 @@ COPY target/spring-boot-docker.jar /app/spring-boot-docker.jar
 EXPOSE 8080
 
 # Command to run the Spring Boot application when the container starts
-CMD ["java", "-jar", "your-application.jar"]
+CMD ["java", "-jar", "spring-boot-docker.jar"]
