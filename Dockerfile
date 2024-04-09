@@ -1,5 +1,5 @@
 # Use a base image with Java 17 from Render's private registry
-FROM openjdk17:alpine
+FROM registry.render.com/openjdk17:alpine
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -12,3 +12,4 @@ EXPOSE 8080
 
 # Command to run your Spring Boot application
 CMD ["java", "-jar", "spring-boot-docker.jar"]
+ 
