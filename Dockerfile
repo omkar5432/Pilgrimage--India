@@ -1,5 +1,6 @@
 FROM openjdk:11-jre-slim
 WORKDIR /app
-COPY target/spring-boot-docker.jar /app/spring-boot-docker.jar
+COPY target/Pilgriamge-0.0.1-SNAPSHOT.jar /app/Pilgriamge-0.0.1-SNAPSHOT.jar
 EXPOSE 8080
-CMD ["java", "-jar", "spring-boot-docker.jar"]
+CMD ["java", "-jar", "Pilgriamge-0.0.1-SNAPSHOT.jar"]
+	
