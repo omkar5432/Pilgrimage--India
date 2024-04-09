@@ -1,5 +1,5 @@
 # Use a base image with Java 17 from Render's private registry
-FROM registry.render.com/adoptopenjdk/openjdk17:alpine-slim
+FROM openjdk17:alpine
 
 # Set the working directory inside the container
 WORKDIR /app
