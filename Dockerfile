@@ -5,7 +5,8 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 # Copy the compiled Spring Boot application JAR file into the container
-COPY target/your-application.jar /app/your-application.jar
+COPY target/spring-boot-docker.jar /app/spring-boot-docker.jar
+
 
 # Expose the port that your application runs on
 EXPOSE 8080
