@@ -8,6 +8,7 @@ public class PilgriamgeApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(PilgriamgeApplication.class, args);
+		System.out.println("Application Started");
 	}
 
 }
